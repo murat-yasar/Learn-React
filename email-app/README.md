@@ -119,21 +119,22 @@ This endpoint accepts form data including user details and a file (CV or photo).
   - file (file): The CV or photo to be attached.
 
 ## Directory Structure
-
-project-directory/                        <br>
-│                                         <br>
-├── backend/                              <br>
-│   ├── index.js                          <br>
-│   ├── package.json                      <br>
-│   └── ... (other backend files)         <br>
-│                                         <br>
-├── frontend/                             <br>
-│   ├── src/                              <br>
-│   │   ├── components/                   <br>
-│   │   │   └── EmailForm.js              <br>
-│   │   ├── App.js                        <br>
-│   │   └── ... (other frontend files)    <br>
-│   ├── package.json                      <br>
-│   └── ... (other frontend files)        <br>
-│                                         <br>
-└── README.md                              <br>
+```scss
+project-directory/
+│
+├── backend/
+│   ├── index.js
+│   ├── package.json
+│   └── ... (other backend files)
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── EmailForm.js
+│   │   ├── App.js
+│   │   └── ... (other frontend files)
+│   ├── package.json
+│   └── ... (other frontend files)
+│
+└── README.md
+```
