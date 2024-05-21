@@ -25,12 +25,13 @@ function Form({ addContact, contacts }) {
     // Add new contact to the contacts
     addContact([...contacts, form]);
 
-    // Reset form-fields after submit
-    // setForm(initFormVals);
+    // Reset form-fields after submit // Taken to the beginning of the function as useEffect
+    // setForm(initFormVals); 
   }
 
   return (
     <div>
+      <h2>New Contact</h2>
       <form onSubmit={onSubmit}>
         <input 
           type="text" 
@@ -41,7 +42,7 @@ function Form({ addContact, contacts }) {
         />
         <br />
         <input 
-          type="tel" 
+          type="text" 
           name='phoneNumber' 
           value={form.phoneNumber}
           placeholder='Phone Number' 
@@ -49,7 +50,7 @@ function Form({ addContact, contacts }) {
         />
         <br />
         <br />
-        <button>Add Contact</button>
+        <button>Add to Contacts</button>
       </form>
     </div>
   )
