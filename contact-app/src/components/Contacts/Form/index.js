@@ -40,7 +40,6 @@ function Form({ addContact, contacts }) {
           placeholder='Full Name' 
           onChange={onChangeForm}
         />
-        <br />
         <input 
           type="text" 
           name='phoneNumber' 
@@ -48,9 +47,9 @@ function Form({ addContact, contacts }) {
           placeholder='Phone Number' 
           onChange={onChangeForm}
         />
-        <br />
-        <br />
-        <button>Add to Contact List</button>
+        <div  className='btn-div'>
+          <button>Add to Contact List</button>
+        </div>
       </form>
     </div>
   )

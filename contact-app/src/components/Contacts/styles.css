@@ -11,6 +11,7 @@
 input {
   width: 100%;
   padding: 5px;
+  margin-bottom: 5px;
 }
 
 ul,li {
@@ -24,7 +25,26 @@ ul,li {
 }
 
 .contact-list > li {
-  background-color: #ADD8E6; /* #ADD8E6; #E0FFFF; #E6E6FA; #B0E0E6; */
+  width: 100%;
   padding: 5px;
   margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ADD8E6; /* #ADD8E6; #E0FFFF; #E6E6FA; #B0E0E6; */
+}
+
+.item-number {
+  text-align: right;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.btn-div > button {
+  font-size: large;
+  padding: 5px;
 }

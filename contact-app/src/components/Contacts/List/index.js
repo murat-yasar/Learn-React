@@ -26,10 +26,12 @@ function List({ contacts }) {
       <ul className="contact-list">
         {filteredList.map((contact, i) => (
           <li key={i}>
-            {contact.fullName} {contact.phoneNumber}
+            <span>{contact.fullName} </span>
+            <span>{contact.phoneNumber}</span>
           </li>
         ))}
       </ul>
+      <p className='item-number'><strong>{filteredList.length}</strong> contact(s) found</p>
     </div>
   );
 }
