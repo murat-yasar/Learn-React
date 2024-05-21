@@ -1,3 +1,5 @@
+import './styles.css';
+
 import React, { useEffect, useState } from 'react'
 import List from './List'
 import Form from './Form';
@@ -16,8 +18,8 @@ function Contacts() {
   }, [contacts]);
   
   return (
-    <div>
-      <h1>Contacts App</h1>
+    <div id='container'>
+      <h1 className='app-header'>Contacts App</h1>
       <Form addContact={setContacts} contacts={contacts} />
       <List contacts={contacts} />
     </div>

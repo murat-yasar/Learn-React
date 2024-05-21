@@ -31,7 +31,7 @@ function Form({ addContact, contacts }) {
 
   return (
     <div>
-      <h2>New Contact</h2>
+      <h2>Add New Contact</h2>
       <form onSubmit={onSubmit}>
         <input 
           type="text" 
@@ -50,7 +50,7 @@ function Form({ addContact, contacts }) {
         />
         <br />
         <br />
-        <button>Add to Contacts</button>
+        <button>Add to Contact List</button>
       </form>
     </div>
   )

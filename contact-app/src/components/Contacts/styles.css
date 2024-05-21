@@ -1,0 +1,30 @@
+.app-header {
+  text-align: center;
+}
+
+#container {
+  width: 400px;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list {
+  margin: 12px 0;
+}
+
+.contact-list > li {
+  background-color: #ADD8E6; /* #ADD8E6; #E0FFFF; #E6E6FA; #B0E0E6; */
+  padding: 5px;
+  margin-bottom: 2px;
+}
