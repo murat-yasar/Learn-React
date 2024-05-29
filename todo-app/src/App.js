@@ -1,20 +1,15 @@
 import './App.css';
-import Header from './components/Header';
-import List from './components/List';
-import Menu from './components/Menu'
-import Footer from './components/Footer';
+
+import Header from './components/Header'
+import Main from './components/Main'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div className="App">
-      <section class="todoapp">
-        <Header />
-      </section>
-      <section class="main">
-        <List />
-        <Menu />
-      </section>
-        <Footer />
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
