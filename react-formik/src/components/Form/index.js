@@ -6,14 +6,12 @@ import { useFormik } from 'formik';
 const Form = () => {
   const { handleSubmit, handleChange, values} = useFormik({
     initialValues: {
-      // firstName: '',
-      // lastName: '',
+      firstName: '',
+      lastName: '',
       email: '',
-      password: '',
-      passwordConfirm: '',
-      // language: '',
-      // gender: '',
-      // skills: []
+      language: '',
+      gender: '',
+      skills: []
     },
     onSubmit: values => {
       alert(JSON.stringify(values, null, 2));
@@ -24,27 +22,19 @@ const Form = () => {
     <form onSubmit={handleSubmit}>
       <table>
         <th>Personal Details</th>
-        {/* <tr>
+        <tr>
           <td> <label htmlFor='firstName'>First Name: </label></td>
           <td><input id='firstName' name='firstName' type='text' className={styles.textField} onChange={handleChange} /></td>
         </tr>
         <tr>
           <td> <label htmlFor='lastName'>Last Name: </label></td>
           <td><input id='lastName' name='lastName' type='text' className={styles.textField} onChange={handleChange} /></td>
-        </tr> */}
+        </tr>
         <tr>
           <td><label htmlFor='email'>Email: </label></td>
-          <td><input id='email' name='email' type="email" className={styles.textField} onChange={handleChange} /></td>
+          <td><input id='email' name='email' type='email' value={values.email} onChange={handleChange} className={styles.textField} /></td>
         </tr>
         <tr>
-          <td> <label htmlFor='password'>Password: </label></td>
-          <td><input id='password' name='password' type='text' className={styles.textField} onChange={handleChange} /></td>
-        </tr>
-        <tr>
-          <td> <label htmlFor='passwordConfirm'>Confirm Password: </label></td>
-          <td><input id='passwordConfirm' name='passwordConfirm' type='text' className={styles.textField} onChange={handleChange} /></td>
-        </tr>
-        {/* <tr>
           <td>Language</td>
           <td>
             <select name='language' value={values.language} onChange={handleChange} >
@@ -98,7 +88,7 @@ const Form = () => {
         <tr>
           <td><input name='skills' type='checkbox' value='MariaDB' onChange={handleChange} /></td>
           <td>MariaDB</td>
-        </tr> */}
+        </tr>
       </table>
 
       <br/><br/>
