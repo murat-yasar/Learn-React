@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 // Set initial form values
 const initFormVals = {fullName: "", phoneNumber: ""};
 
+
 function Form({ addContact, contacts }) {
   const [form, setForm] = useState(initFormVals);
 
@@ -26,7 +27,6 @@ function Form({ addContact, contacts }) {
     addContact([...contacts, form]);
 
     // Reset form-fields after submit // Taken to the beginning of the function as useEffect
-    // setForm(initFormVals); 
   }
 
   return (
